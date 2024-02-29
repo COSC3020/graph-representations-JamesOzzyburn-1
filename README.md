@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/hFs1pb0z)
 # Graph Representations
 
 Implement a function that converts an adjacency matrix to an adjacency list for
@@ -19,3 +20,10 @@ most important part. Add your answer to this markdown file.
 
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
+
+
+## Answer
+
+I believe that the runtime complexity of the conversion between a adjacency matrix and adjacency list is $\Theta(n^2)$ where $n$ is the number of verticies in the matrix. I think this because we have an outer for loop that iterates through $n$ times and for each $n$ it has an inner for loop that iterates through $n$ times giving us $\Theta(n*n)$ which can be simplified to $\Theta(n^2)$.
+
+The only thing that affects runtime is the number of verticies. I believe this becuase we are just iterating through a 2D array where the dimensions are the number of verticies and we are just looking at the array "cell" containing the info\existance about the edge but we arent iterating through the edges themself.
